@@ -1,0 +1,132 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.container{
+    width: 90%;
+    margin: 4% auto;
+    border: 1px solid;
+    height: 500px;
+    overflow: hidden;
+    box-shadow: 6px 11px 5px 2px rgba(0,0,0,0.75);
+    position: relative;
+    background-image: url("images/noise.png");
+}
+.single{
+    margin: 1%;
+    width: 18%;
+    height: 50%;
+    float: left;
+    background-color: #332F46;
+    margin-top: 12%;
+    border: 5px solid transparent rgb(163, 117, 117);
+    transition: 1s;
+    box-shadow: -8px 10px 7px 1px rgba(66,45,66,0.91);
+    position: relative;
+    
+}
+
+.single:hover{
+    background-color:#9E9E9E;
+    border-radius: 200px 0px 200px 0px;
+    border: 5px solid rgb(223, 203, 203);
+    transform: rotate(360deg);
+}
+.last:hover{
+    background-color:#9E9E9E;
+    border-radius: 0px 200px 0px 200px;
+   
+    border: 5px solid rgb(223, 203, 203);
+}
+.single:hover img{
+    visibility: visible;
+}
+.single:hover .name{
+    visibility: hidden;
+}
+img{
+    visibility: hidden;
+    margin-left: 24%;
+    border-radius: 50px;
+    margin-top: 23%;
+    width: 50%;
+    transition: 1s;
+    position: absolute;
+    top: 8px;
+}
+.container .single:last-child {
+    margin-right: 0;
+}
+.message{
+    visibility: hidden;
+    position: absolute;
+    top: -44%;
+    left: 93%;
+    background-color: rgb(247, 236, 234);
+    width: 91%;
+    margin: auto;
+    border-radius: 38px;
+    box-shadow: -8px 10px 7px 1px rgba(66,45,66,0.91);
+}
+.message_1{
+    visibility: hidden;
+    position: absolute;
+    top: -44%;
+    left: -75%;
+    background-color: rgb(247, 236, 234);
+    width: 91%;
+    margin: auto;
+    border-radius: 38px;
+    box-shadow: -8px 10px 7px 1px rgba(66,45,66,0.91);
+}
+.single:hover .message{
+    visibility: visible;
+}
+.single:hover .message_1{
+    visibility: visible;
+}
+h1{
+    text-align: center;
+    padding: 10%;
+    font-size: 45px;
+    font-family: sans-serif;
+}
+.name{
+    margin: 0 auto;
+    width: 30%;
+    background-color: rgb(247, 236, 234);
+    position: absolute;
+    top: 33%;
+    left: 33%;
+    border-radius: 50px;
+    box-shadow: -8px 10px 7px 1px rgba(66,45,66,0.91);
+}
+.single:hover #heart{
+    visibility: visible;
+}
+#heart {
+    visibility: hidden;
+    position: relative;
+    top: -100px;
+    left: 40px;
+    width: 100px;
+    height: 90px;
+  }
+  #heart:before,
+  #heart:after {
+    position: absolute;
+    content: "";
+    left: 50px;
+    top: 0;
+    width: 50px;
+    height: 80px;
+    background: radial-gradient(ellipse at center, rgba(246,49,14,1) 0%, rgba(237,78,53,1) 38%, rgba(221,33,8,1) 51%, rgba(221,38,14,1) 71%, rgba(216,40,24,1) 100%);
+    border-radius: 50px 50px 0 0;
+    transform: rotate(-45deg);
+    transform-origin: 0 100%;
+  }
+  #heart:after {
+    left: 0;
+    transform: rotate(45deg);
+    transform-origin: 100% 100%;
+  }
